@@ -68,7 +68,7 @@ ul{
     flex-wrap: wrap;
     column-gap: 60px;
     row-gap: 40px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     width: 750px;
 }
 .subhero2 .imgbox{
@@ -105,20 +105,65 @@ ul{
 .subhero2 .imgbox:hover{
     transform: translateY(-10px);
 }
-.bgimg {
-    /* display: none; */
+.bgimg{
+    display: none;
 }
 /* TABLEVIEW */
 @media screen and (min-width: 500px) and (max-width: 1200px){
     .navbar{
+        width: 100vw;
         display: flex;
+        flex-direction: row;
+        height: 100px;
+        margin-left: 250px;
+        column-gap: 500px;
         justify-content: space-evenly;
-        width: 800px;
     }
-    .navbar .logo{
-        margin-right: 200px;
+    .menu-section{
+        display: flex;
+        column-gap: 40px;
     }
-    .bgimg .first{
+    .menu-section a{
+        color: white;
+    }
+    ul{
+        display: flex;
+        column-gap: 60px;
+        margin-top: 30px;
+        list-style: none;
+        color: white;
+    }
+    .menu-logo img{
+        margin-left: 50px;
+        background-color: rgba(140, 140, 140, 0.8);
+        border-radius: 50%;
+        padding: 5px;
+        margin-top: 20px;
+    }
+    .bgimg{
+        display: block;
+    }
+    .first img{
+        position: absolute;
+        z-index: -1;
+        height: 33.3vh;
+        width: 155vw;
+    }
+    .second img{
+        position: absolute;
+        z-index: -2;
+        top: 810px;
+        height: 33.3vh;
+        width: 155vw;
+    }
+    .third img{
+        position: absolute;
+        z-index: -3;
+        bottom: 27px;
+        height: 33.3vh;
+        width: 155vw;
+    }
+    /* .bgimg .first{
         background-image: url(./img/giza.jpg);
         position: absolute;
         z-index: -1;
@@ -146,44 +191,75 @@ ul{
         background-repeat: no-repeat;
         width: 155vw;
         background-size: cover;
-    }
-    body{
-        width: 150vw;
-    }
+    } */
     .hero{
         display: flex;
         flex-direction: column;
-        margin-top: -140px;
-        margin-left: 260px;
+        margin-top: -100px;
     }
     .hero .subhero1{
+        width: 140vw;
         display: flex;
         flex-direction: column;
-        margin-left: 100px;
         height: 300px;
-        justify-content: center;
+        align-items: center;
     }
     .hero .subhero2{
         margin-top: 100px;
-        width: 100vw;
+        width: 155vw;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
     }
     .hero .subhero2 .imgbox{
         width: 800px;
-        margin: auto;
     }
 }
                              /* MOBILEVIEW */
-@media screen and (max-width: 550px) and (min-width: 250px){
+@media screen and (max-width: 700px) and (min-width: 250px){
+    body{
+        height: 100vh;
+    }
     .navbar{
-        width: 680px;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+        column-gap: 500px;
+        justify-content: space-between;
     }
-    .navbar .logo{
-        margin-right: 200px;
+    .menu-section{
+        display: flex;
     }
-    .bgimg .first{
+    ul{
+        display: flex;
+        row-gap: 20px;
+        flex-direction: column;
+    }
+    .bgimg{
+        display: block;
+    }
+    .first img{
+        position: absolute;
+        z-index: -1;
+        height: 33.3vh;
+        width: 270vw;
+    }
+    .second img{
+        position: absolute;
+        z-index: -2;
+        top: 810px;
+        height: 33.3vh;
+        width: 270vw;
+    }
+    .third img{
+        position: absolute;
+        z-index: -3;
+        bottom: 27px;
+        height: 33.3vh;
+        width: 270vw;
+    }
+    /* .bgimg .first{
         background-image: url(./img/giza.jpg);
         position: absolute;
         z-index: -1;
@@ -211,22 +287,24 @@ ul{
         background-repeat: no-repeat;
         width: 270vw;
         background-size: cover;
-    }
-    body{
+    } */
+    /* body{
         width: 172vw;
-    }
+    } */
     .hero{
         display: flex;
         width: 270vw;
         margin: 0;
+        align-items: center;
         flex-direction: column;
     }
     .hero .subhero1{
         display: flex;
         height: 270px;
         flex-direction: column;
-        margin-top: -10px;
+        margin-top: 100px;
         margin-bottom: 100px;
+        margin-left: 0;
     }
     .hero .subhero2{
         display: flex;
