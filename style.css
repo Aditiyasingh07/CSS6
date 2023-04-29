@@ -68,7 +68,6 @@ ul{
     flex-wrap: wrap;
     column-gap: 60px;
     row-gap: 40px;
-    /* margin-left: 20px; */
     width: 750px;
 }
 .subhero2 .imgbox{
@@ -163,35 +162,6 @@ ul{
         height: 33.3vh;
         width: 155vw;
     }
-    /* .bgimg .first{
-        background-image: url(./img/giza.jpg);
-        position: absolute;
-        z-index: -1;
-        height: 150vh;
-        background-repeat: no-repeat;
-        width: 155vw;
-        background-size: cover;
-    }
-    .bgimg .second{
-        background-image: url(./img/AI.jpg);
-        position: absolute;
-        top: 550px;
-        z-index: -1;
-        height: 150vh;
-        background-repeat: no-repeat;
-        width: 155vw;
-        background-size: cover;
-    }
-    .bgimg .third{
-        background-image: url(./img/western.jpg);
-        position: absolute;
-        top: 1050px;
-        z-index: -1;
-        height: 150vh;
-        background-repeat: no-repeat;
-        width: 155vw;
-        background-size: cover;
-    } */
     .hero{
         display: flex;
         flex-direction: column;
@@ -259,38 +229,6 @@ ul{
         height: 33.3vh;
         width: 270vw;
     }
-    /* .bgimg .first{
-        background-image: url(./img/giza.jpg);
-        position: absolute;
-        z-index: -1;
-        height: 150vh;
-        background-repeat: no-repeat;
-        width: 270vw;
-        background-size: cover;
-    }
-    .bgimg .second{
-        background-image: url(./img/AI.jpg);
-        position: absolute;
-        top: 550px;
-        z-index: -1;
-        height: 150vh;
-        background-repeat: no-repeat;
-        width: 270vw;
-        background-size: cover;
-    }
-    .bgimg .third{
-        background-image: url(./img/western.jpg);
-        position: absolute;
-        top: 1050px;
-        z-index: -1;
-        height: 150vh;
-        background-repeat: no-repeat;
-        width: 270vw;
-        background-size: cover;
-    } */
-    /* body{
-        width: 172vw;
-    } */
     .hero{
         display: flex;
         width: 270vw;
